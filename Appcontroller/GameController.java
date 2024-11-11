@@ -9,11 +9,15 @@ public class GameController {
     private MapboardModel mapboard;
     private PlayerModel player;
     private MoveModel moveModel;
+    // Placeholder for GUI components
+    // private GUIComponent gui;
 
     public GameController(MapboardModel mapboard, PlayerModel player) {
         this.mapboard = mapboard;
         this.player = player;
         this.moveModel = new MoveModel(mapboard, player);
+        // Initialize GUI components
+        // initGUI();
     }
 
     public void startGame() {
@@ -44,4 +48,9 @@ public class GameController {
             }
         }
     }
+
+    // Placeholder method for GUI initialization
+    // private void initGUI() {
+    //     // Initialize GUI components here
+    // }
 }
